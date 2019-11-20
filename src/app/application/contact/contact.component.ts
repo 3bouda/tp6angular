@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  onAccueil() {
+    this.router.navigate(['/accueil']);
+  }
 
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
 }
+import { Router } from '@angular/router';
+
