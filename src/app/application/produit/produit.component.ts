@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProduitsComponent } from '../produits/produits.component';
+
 
 @Component({
   selector: 'app-produit',
@@ -10,11 +10,11 @@ import { ProduitsComponent } from '../produits/produits.component';
 
 export class ProduitComponent {
   identifiant: number;
-  tab;
+  
 
 
-  constructor(private activatedRoute: ActivatedRoute, private a: ProduitsComponent) {
-    this.tab = this.a.lesProduits[this.identifiant];
+  constructor(private activatedRoute: ActivatedRoute) {
+
   }
 
   ngOnInit() {
